@@ -9,11 +9,10 @@ def cosine(a, b):
     return a @ b /(np.linalg.norm(a) * np.linalg.norm(b))
 
 sentences = [
-    "I know Docker",
-    "Containerization experience",
-    "Experience working with Python"
-    "built backend scripts"
-    "I like pizza",
+    "search_query: Docker experience",
+    "search_document: Built and deployed containerized services",
+    "search_document: Experience writing Python scripts",
+    "search_document: I like pizza",
 ]
 vecs = [embed(s) for s in sentences]
 print("Vector length:", len(vecs[0]))
